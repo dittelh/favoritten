@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frokosterne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="flexnav">
+                <a class="icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="../index.html"><img id="logo" src="../favoritten.png" alt="Logo"></a>
+                <a href="../indkøbskurv/indkøbskurv.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div id="myLinks">
+                <a href="../index.html">Forside</a>
+                <a href="frokost.html">Frokosterne</a>
+                <a href="../hvadkanvitilbyde/hvadkanvitilbyde.html">Hvad kan vi tilbyde?</a>
+                <a href="../kontaktos/kontaktos.html">Kontakt os</a>
+            </div>
+        </div>
+    </header>
+    <h3 class="overskrift">Vælg hvilken kategori:</h3>
+    <div class="kategoricontainer">
+         <button class="kategori" value="28" onclick="categoryValue(event)">
+            Vegetarisk
+        </button>
+        <button class="kategori" value="30" onclick="categoryValue(event)">
+            Fisk og grønt
+        </button>
+        <button class="kategori" value="28" onclick="categoryValue(event)">
+            Kaloriefattigt
+        </button>
+        <button class="kategori" value="28" onclick="categoryValue(event)">
+            Børnevenligt
+        </button>
+        <button class="kategori" value="28" onclick="categoryValue(event)">
+            Glutenfrit
+        </button>
+        <button class="kategori" value="30" onclick="categoryValue(event)">
+            Proteinrigt
+        </button>
+    </div>
+    <h3 class="overskrift">Hvor mange personer?</h3>
+    <div class="personcontainer">
+        <button class="personer" value="1" onclick="personsValue(event)">
+            1
+        </button>
+        <button class="personer" value="2" onclick="personsValue(event)">
+            2
+        </button>
+        <button class="personer" value="3" onclick="personsValue(event)">
+            3
+        </button>
+        <button class="personer" value="4" onclick="personsValue(event)">
+            4
+        </button>
+    </div>
+    <h3 class="overskrift">Hvor mange måltider?</h3>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="5" value="3" class="slider" id="slider" oninput="mealsValue()">
+        <output id="output">3</output>
+    </div>
+    <div id="priscontainer">
+        <section id="overskriftId">
+            <h3 class="prisoverskrift">Prisoversigt</h3>
+            <p id="pId" class="prisoverskrift">4 måltider for 2 personer per uge</p>
+        </section>
+        <hr id="hrId">
+        <div id="prisId">
+            <p>Pris</p>
+            <p id="price">240,-</p>
+        </div>
+        <div id="leveringId">
+            <p>Levering</p>
+            <p>20,-</p>
+        </div>
+        <hr id="hrId2">
+        <div id="totalId">
+            <p>Total</p>
+            <p id="totalPrice">260,-</p>
+        </div>
+    </div>
+    <div id="lægikurv">
+        <a id="tekstlægikurv" href="../indkøbskurv/indkøbskurv.html">Læg i kurv</a>
+    </div>
+    <footer id="footer">
+        <img class="some" src="../instagram.png" alt="">
+        <img class="some" src="../facebook.png" alt="">
+        <p class="footertekst">Privacy policy</p>
+        <p class="footertekst">Terms & conditions</p>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
