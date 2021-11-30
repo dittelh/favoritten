@@ -1,104 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frokosterne</title>
-    <link rel="stylesheet" href="frokost.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
-<body>
+    <link rel="stylesheet" href="frokost.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <div class="topnav">
-            <a class="icon" onclick="openMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="index.html"><img id="logo" src="../assets/images/favoritten.png" alt="Logo"></a>
-            <div id="myLinks">
-                <a href="../index.html">Forside</a>
-                <a href="frokost.html">Frokosterne</a>
-                <a href="../hvadkanvitilbyde/hvadkanvitilbyde.html">Hvad kan vi tilbyde?</a>
-                <a href="../kontaktos/kontaktos.html">Kontakt os</a>
-            </div>
-            <a href="../indkøbskurv/indkøbskurv.html" class="cart"><i class="fas fa-shopping-cart"></i></a>
-    </div>
+      <div class="topnav">
+        <a class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="../index.html">
+            <img id="logo" src="../assets/images/favoritten.png" alt="Logo"/>
+        </a>
+        <div id="myLinks">
+          <a href="../index.html">Forside</a>
+          <a href="frokost.html">Frokosterne</a>
+          <a href="../hvadkanvitilbyde/hvadkanvitilbyde.html">
+            Hvad kan vi tilbyde?
+        </a>
+          <a href="../kontaktos/kontaktos.html">Kontakt os</a>
+        </div>
+        <a href="../indkøbskurv/indkøbskurv.html" class="cart">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
     </header>
     <h3 class="overskrift">Vælg hvilken kategori:</h3>
     <div class="kategoricontainer">
-         <button class="kategori" value="28" onclick="categoryValue(event)">
-            Vegetarisk
-        </button>
-        <button class="kategori" value="30" onclick="categoryValue(event)">
-            Fisk og grønt
-        </button>
-        <button class="kategori" value="28" onclick="categoryValue(event)">
-            Kaloriefattigt
-        </button>
-        <button class="kategori" value="28" onclick="categoryValue(event)">
-            Børnevenligt
-        </button>
-        <button class="kategori" value="28" onclick="categoryValue(event)">
-            Glutenfrit
-        </button>
-        <button class="kategori" value="30" onclick="categoryValue(event)">
-            Proteinrigt
-        </button>
+      <button
+        id="vegetarisk"
+        class="kategori"
+        value="28"
+        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+        Vegetarisk
+      </button>
+      <button
+        id="fisk"
+        class="kategori"
+        value="30"
+        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+        Fisk og grønt
+      </button>
+      <button
+        id="kaloriefattigt"
+        class="kategori"
+        value="28"
+        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+        Kaloriefattigt
+      </button>
+      <button
+        id="boernevenligt"
+        class="kategori"
+        value="28"
+        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+        Børnevenligt
+      </button>
+      <button
+        id="glutenfrit"
+        class="kategori"
+        value="28"
+        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+        Glutenfrit
+      </button>
+      <button
+        id="proteinrigt"
+        class="kategori"
+        value="30"
+        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+        Proteinrigt
+      </button>
     </div>
     <h3 class="overskrift">Hvor mange personer?</h3>
     <div class="personcontainer">
-        <button class="personer" value="1" onclick="personsValue(event)">
-            1
-        </button>
-        <button class="personer" value="2" onclick="personsValue(event)">
-            2
-        </button>
-        <button class="personer" value="3" onclick="personsValue(event)">
-            3
-        </button>
-        <button class="personer" value="4" onclick="personsValue(event)">
-            4
-        </button>
+      <button 
+      id="1" 
+      class="personer" 
+      value="1" 
+      onclick="personsValue(event), highlightedPersonChoice(this.id)">
+        1
+      </button>
+      <button 
+      id="2" 
+      class="personer" 
+      value="2" 
+      onclick="personsValue(event), highlightedPersonChoice(this.id)">
+        2
+      </button>
+      <button 
+      id="3" 
+      class="personer" 
+      value="3" 
+      onclick="personsValue(event), highlightedPersonChoice(this.id)">
+        3
+      </button>
+      <button 
+      id="4" 
+      class="personer" 
+      value="4" 
+      onclick="personsValue(event), highlightedPersonChoice(this.id)">
+        4
+      </button>
     </div>
     <h3 class="overskrift">Hvor mange måltider?</h3>
     <div class="slidecontainer">
-        <input type="range" min="1" max="5" value="3" class="slider" id="slider" oninput="mealsValue()">
-        <output id="output">3</output>
+      <input
+        type="range"
+        min="1"
+        max="5"
+        value="3"
+        class="slider"
+        id="slider"
+        oninput="mealsValue()"/>
+      <output id="output">3</output>
     </div>
     <div id="priscontainer">
-        <section id="overskriftId">
-            <h3 class="prisoverskrift">Prisoversigt</h3>
-            <p id="pId" class="prisoverskrift">4 måltider for 2 personer per uge</p>
-        </section>
-        <hr id="hrId">
-        <div id="prisId">
-            <p>Pris</p>
-            <p id="price">240,-</p>
-        </div>
-        <div id="leveringId">
-            <p>Levering</p>
-            <p>20,-</p>
-        </div>
-        <hr id="hrId2">
-        <div id="totalId">
-            <p>Total</p>
-            <p id="totalPrice">260,-</p>
-        </div>
+      <section id="overskriftId">
+        <h3 class="prisoverskrift">Prisoversigt</h3>
+        <p id="pId" class="prisoverskrift">4 måltider for 2 personer per uge</p>
+      </section>
+      <hr id="hrId" />
+      <div id="prisId">
+        <p>Pris</p>
+        <p id="price">240,-</p>
+      </div>
+      <div id="leveringId">
+        <p>Levering</p>
+        <p>20,-</p>
+      </div>
+      <hr id="hrId2" />
+      <div id="totalId">
+        <p>Total</p>
+        <p id="totalPrice">260,-</p>
+      </div>
     </div>
     <div id="lægikurv">
-        <a id="tekstlægikurv" href="../indkøbskurv/indkøbskurv.html">Læg i kurv</a>
+      <a id="tekstlægikurv" href="../indkøbskurv/indkøbskurv.html">
+        Læg i kurv </a>
     </div>
     <footer id="footer">
-        <div id="someDiv">
-            <img class="some" src="assets/images/instagram.png" alt="">
-            <img class="some" src="assets/images/facebook.png" alt="">
-        </div>
-        <div id="footertekstdiv" >
-            <p class="footertekst">Privacy policy</p>
-            <p class="footertekst">Terms & conditions</p>
-        </div>
+      <div id="someDiv">
+        <img class="some" src="assets/images/instagram.png" alt="" />
+        <img class="some" src="assets/images/facebook.png" alt="" />
+      </div>
+      <div id="footertekstdiv">
+        <p class="footertekst">Privacy policy</p>
+        <p class="footertekst">Terms & conditions</p>
+      </div>
     </footer>
     <script src="../script.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
