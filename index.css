@@ -1,0 +1,49 @@
+@import url("style.css");
+
+#stortforsidebillede{
+    width: 100%;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#tekstbox{
+    text-align: center;
+    font-family: aller;
+    font-weight: lighter;
+}
+
+#bestilknap{
+    background-color: rgba(202, 214, 172, 0.7);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 154px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 10px gray;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+#bestilher{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#billedinspo{
+    display: flex;
+}
+
+.billeder{
+    width: 50%;
+}

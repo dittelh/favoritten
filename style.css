@@ -1,24 +1,33 @@
+@font-face {
+    font-family: aller;
+    src: url("assets/fonts/Aller_Lt.ttf");
+}
+
 body{
     margin: 0;
-    background-color: #E5F3FF;
     font-family: 'Courier New', Courier, monospace;
+    background-image: url("assets/images/himmelmobile.png");
 }
+
+/* Header styling */
 
 .topnav{
     overflow: hidden;
     position: relative;
-    background-color: #6CBBFF;
-  }
-.flexnav{
+    background-color: #649CCC;
     display: flex;
     justify-content: space-between;
-}
+  }
   
 .topnav #myLinks{
     display: none;
 }
 
 .icon{
+    font-size: 1.5rem !important;
+}
+
+.cart{
     font-size: 1.5rem !important;
 }
 
@@ -34,63 +43,98 @@ body{
     display: block;
 }
   
-#stortforsidebillede{
-    width: 100%;
-}
 
-#tekstbox{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
+/* Footer styling*/
 
-#bestilknap{
-    background-color: white;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    width: 154px;
-    height: 50px;
+#footer{
+    background-color: #649CCC;   
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 3px 10px gray;
-    margin-bottom: 10%;
-    margin-top: 10%;
 }
 
-#bestilher{
-    text-decoration: none;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 120%;
-}
-
-#billedinspo{
+#footertekstdiv{
     display: flex;
-}
-
-.billeder{
+    flex-direction: row;
     width: 50%;
 }
 
-#footer{
-    background-color: #6CBBFF;   
-    display: flex;
+#someDiv{
+    width: 50%;
 }
-
 .some{
-    height: 10%;
-    width: 10%;
+    width: 20%;
     margin: 5px;
     margin-right: 10px;
     margin-top: 2.5%;
 }
 
-.footertekst{
-    margin-right: 10%;
-    margin-left: 10%;
+@media screen and (min-width: 992px){
+    body{
+        background-image: url("assets/images/himmelopa.png");
+
+    }
+
+    .icon{
+        display: none !important;
+    }
+
+    .topnav #myLinks{
+        display: flex;
+        position: sticky;
+        margin-left: 20%;
+    }
+
+    #myLinks a{
+        font-weight: bold;
+        border-right: solid;        
+    }
+    #myLinks > a:first-child{
+        border-left: solid;        
+    }
+
+    .topnav{
+        display: flex;
+        align-items: center;
+    }
+
+    #logo{
+        width: 200px;
+    }
+
+    .cart{
+        font-size: 2.5rem !important;
+        margin-right: 20px;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    #footer{
+        background-color: #649CCC;   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .some{
+        margin: unset;
+        height: unset;
+        width: 7%;
+    
+    }
+   
+    #someDiv{
+        margin-left: 3%;
+    }
+
+    #footertekstdiv{
+        justify-content: end;
+    }
+    .footertekst{
+        margin: 1rem;
+    }
+
+
+
 }
 

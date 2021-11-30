@@ -1,0 +1,169 @@
+@import url("../style.css");
+
+.kategoricontainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0% 10% 10% 10%;
+}
+
+.kategori{
+    margin: 10%;
+    background-color: rgba(202, 214, 172, 0.7);
+    box-shadow: 0 3px 10px gray;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 50px;
+    border-color: black;
+    border-width: 1px;
+}
+
+.overskrift{
+    text-align: center;
+}
+
+.personer{
+    background-color: rgba(202, 214, 172, 0.7);
+    box-shadow: 0 3px 10px gray;
+    border-radius: 5px;
+    border-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    height: 40px;
+    width: 70px;
+    border-width: 1px;
+}
+
+.personcontainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slidecontainer{
+    margin: 0 1.5rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background-color: rgba(202, 214, 172, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    outline: none;
+    box-shadow: 0 3px 10px gray;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    border-width: 1px;
+    background: #A2AD86;
+    cursor: pointer;
+    border-style: solid;
+  }
+  
+  /* .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #6CBBFF;
+    cursor: pointer;
+  } */
+
+  #output{
+      margin: 3%;
+      font-weight: bold;
+  }
+
+#priscontainer{
+    background-color: rgba(202, 214, 172, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px gray;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#overskriftId{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.prisoverskrift{
+    margin: 2%;
+}
+
+#hrId{
+    margin-left: 3%;
+    margin-right: 3%;
+    border-color: black;
+}
+
+#prisId{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    
+}
+
+#leveringId{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+#hrId2{
+    margin: 0%;
+    border-style: solid;
+    border-width: .5px;
+}
+
+#totalId{
+    display: flex;
+    justify-content: space-between;
+    background-color: #A2AD86;
+    padding: 3%;
+    font-weight: bold;
+}
+
+#lægikurv{
+    background-color: rgba(202, 214, 172, 0.7);
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#tekstlægikurv{
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 120%; 
+}
+
+p{
+    font-family: aller;
+    font-weight: lighter;
+}
+
+

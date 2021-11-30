@@ -1,0 +1,139 @@
+@import url("../style.css");
+
+#udfyldcontainer{
+    display: grid;
+    grid-template-areas:
+    'fornavn fornavn efternavn efternavn'
+    'vejnavn vejnavn vejnavn vejnavn'
+    'postnummer postnummer by by'
+    'telefonnummer telefonnummer telefonnummer telefonnummer'
+    'øvrig øvrig øvrig øvrig'
+    ;
+    background-color: rgba(202, 214, 172, 0.7);;
+    margin: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 3%;
+    box-shadow: 0 3px 10px gray;
+}
+
+.fornavn{
+    grid-area: fornavn;
+}
+
+.efternavn{
+    grid-area: efternavn;
+}
+
+.vejnavn{
+    grid-area: vejnavn;
+}
+
+.postnummer{
+    grid-area: postnummer;
+}
+
+.by{
+    grid-area: by;
+}
+
+.telefonnummer{
+    grid-area: telefonnummer;
+}
+
+.øvrig{
+    grid-area: øvrig;
+}
+
+.langinput{
+    width: 92.5%;
+}
+
+#tekstbox{
+    margin-left: 7%
+}
+
+#levering{
+    margin-bottom: 3%;
+}
+
+h4{
+    margin: 0%;
+    font-weight: 600;
+}
+
+#priscontainer{
+    background-color: rgba(202, 214, 172, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px gray;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#overskriftId{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.prisoverskrift{
+    margin: 2%;
+}
+
+#hrId{
+    margin-left: 3%;
+    margin-right: 3%;
+    border-color: black;
+}
+
+#prisId{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    
+}
+
+#leveringId{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+#hrId2{
+    margin: 0%;
+    border-style: solid;
+    border-width: .5px;
+}
+
+#totalId{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(162, 173, 134);
+    padding: 3%;
+}
+p{
+    font-family: aller;
+    font-weight: lighter;
+}
+
+#totalId, #totalPrice{
+    font-weight: bolder;
+}
+
+
+#betalingsikoner{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#betaling{
+    text-align: center;
+    margin-top: 10%;
+}
+

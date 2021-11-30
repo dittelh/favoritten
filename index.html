@@ -5,25 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoritten</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     <header>
         <div class="topnav">
-            <div class="flexnav">
                 <a class="icon" onclick="openMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
                 <a href="index.html"><img id="logo" src="assets/images/favoritten.png" alt="Logo"></a>
-                <a href="indkøbskurv/indkøbskurv.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-            <div id="myLinks">
-                <a href="index.html">Forside</a>
-                <a href="frokost/frokost.html">Frokosterne</a>
-                <a href="hvadkanvitilbyde/hvadkanvitilbyde.html">Hvad kan vi tilbyde?</a>
-                <a href="kontaktos/kontaktos.html">Kontakt os</a>
-            </div>
+                <div id="myLinks">
+                    <a href="index.html">Forside</a>
+                    <a href="frokost/frokost.html">Frokosterne</a>
+                    <a href="hvadkanvitilbyde/hvadkanvitilbyde.html">Hvad kan vi tilbyde?</a>
+                    <a href="kontaktos/kontaktos.html">Kontakt os</a>
+                </div>
+                <a href="indkøbskurv/indkøbskurv.html" class="cart"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
     <img id="stortforsidebillede" src="assets/images/food.jpg" alt="mad">
@@ -35,17 +33,21 @@
         <p>4. Leveret direkte til din dør</p>
     </div>
     <div id="bestilknap">
-        <a id="bestilher" href="assets/images/frokost/frokost.html">Bestil her</a>
+        <a id="bestilher" href="frokost/frokost.html">Bestil her</a>
     </div>
     <div id="billedinspo">
         <img class="billeder" src="assets/images/salat.jpg" alt="salat inspo">
         <img class="billeder" src="assets/images/bagel.jpg" alt="bagel">
     </div>
     <footer id="footer">
-        <img class="some" src="assets/images/instagram.png" alt="">
-        <img class="some" src="assets/images/facebook.png" alt="">
-        <p class="footertekst">Privacy policy</p>
-        <p class="footertekst">Terms & conditions</p>
+        <div id="someDiv">
+            <img class="some" src="assets/images/instagram.png" alt="">
+            <img class="some" src="assets/images/facebook.png" alt="">
+        </div>
+        <div id="footertekstdiv" >
+            <p class="footertekst">Privacy policy</p>
+            <p class="footertekst">Terms & conditions</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
