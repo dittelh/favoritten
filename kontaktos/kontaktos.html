@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt os</title>
-    <link rel="stylesheet" href="kontaktos.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
-<body>
+    <link rel="stylesheet" href="kontaktos.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <div class="topnav">
-            <div class="flexnav">
-                <a class="icon" onclick="openMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <a href="../index.html"><img id="logo" src="../assets/images/favoritten.png" alt="Logo"></a>
-                <a href="../indkøbskurv/indkøbskurv.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-            <div id="myLinks">
-                <a href="../index.html">Forside</a>
-                <a href="../frokost/frokost.html">Frokosterne</a>
-                <a href="../hvadkanvitilbyde/hvadkanvitilbyde.html">Hvad kan vi tilbyde?</a>
-                <a href="kontaktos.html">Kontakt os</a>
-            </div>
+      <div class="topnav">
+        <a class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html">
+          <img id="logo" src="../assets/images/favoritten.png" alt="Logo" />
+        </a>
+        <div id="myLinks">
+          <a href="../index.html">Forside</a>
+          <a href="../frokost/frokost.html">Frokosterne</a>
+          <a href="../hvadkanvitilbyde/hvadkanvitilbyde.html">
+            Hvad kan vi tilbyde?
+          </a>
+          <a href="kontaktos.html">Kontakt os</a>
         </div>
+        <a href="../indkøbskurv/indkøbskurv.html" class="cart">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
     </header>
-    <img src="../assets/images/map.png" class="kort">
-        <h2>Vores adresse:</h2> 
-        <p>Sandvadsvej 1, 
-           4600 Køge  
-        </p>
-        <h2>Telefonnummer:</h2>
-        <p>
-            12345678
-        </p>
-        <h2>Vores mail:</h2>
-        <p>
-            ditnavn@domæne.dk
-        </p>
-        <img src="../assets/images/happy.jpg" class="billedeone">
-        <img src="../assets/images/package.jpg" class="billedetwo">
+    <img src="../assets/images/map.png" class="kort" />
+    <h2>Vores adresse:</h2>
+    <p>Sandvadsvej 1, 4600 Køge</p>
+    <h2>Telefonnummer:</h2>
+    <p>12345678</p>
+    <h2>Vores mail:</h2>
+    <p>ditnavn@domæne.dk</p>
+    <img src="../assets/images/happy.jpg" class="billedeone" />
+    <img src="../assets/images/package.jpg" class="billedetwo" />
     <footer id="footer">
-        <img class="some" src="../assets/images/instagram.png" alt="">
-        <img class="some" src="../assets/images/facebook.png" alt="">
+      <div id="someDiv">
+        <img class="some" src="../assets/images/instagram.png" alt="" />
+        <img class="some" src="../assets/images/facebook.png" alt="" />
+      </div>
+      <div id="footertekstdiv">
         <p class="footertekst">Privacy policy</p>
         <p class="footertekst">Terms & conditions</p>
+      </div>
     </footer>
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>

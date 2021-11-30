@@ -47,3 +47,52 @@ h3{
 .billeder{
     width: 50%;
 }
+
+.hideMobile{
+    display: none;
+}
+
+
+@media screen and (min-width: 992px){
+    #bigContainer{
+        background-image: url("assets/images/food.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #billedinspo{
+        display: none;
+    }
+
+    .hideDesktop{
+        display: none;
+    }
+
+    .hideMobile{
+        display: flex;
+        background-color: rgba(202, 214, 172, 0.7);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        padding: 3%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        font-size: 200%;
+    }
+
+    #bestilknap{
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+
+    
+}
