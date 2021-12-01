@@ -137,3 +137,28 @@ p{
     margin-top: 10%;
 }
 
+@media screen and (min-width: 992px) {
+   
+    #indholdContainer{
+        display: flex;
+    }
+
+    #udfyldcontainer{
+    /* max-width: 812px; */
+    width: 40%;
+    }
+
+    #rightContainer{
+    /* max-width: 536px; */
+    width: 40%;
+    }
+
+    #tekstbox{
+    margin-top: 12%;
+    }
+
+    .kortinput{
+        width: 85%;
+    }
+
+}
