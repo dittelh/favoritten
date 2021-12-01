@@ -13,7 +13,6 @@ body{
 
 .topnav{
     overflow: hidden;
-    position: relative;
     background-color: #649CCC;
     display: flex;
     justify-content: space-between;
@@ -27,10 +26,10 @@ body{
 .showBurger{
     display: block;
     position: absolute;
-    top: 80px;
+    top: 78px;
     left: 0px;
     background-color: #649CCC;
-    
+    width: 100%;
 }
 
 .icon{
