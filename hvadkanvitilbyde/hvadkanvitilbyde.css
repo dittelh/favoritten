@@ -52,3 +52,41 @@ p {
     font-weight: bold;
     font-size: 120%;
 }
+.picture2{
+    display:none;
+}
+
+@media screen and (min-width:992px) {
+    .picture{
+        display:none;
+    }
+    .picture2{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    #cows{
+     height: 500px;  
+     width:33%;
+     object-fit: cover;
+     object-position: 100%;
+     margin-top: 10%;
+     
+    }
+
+    #madpakke{
+        height: 500px;
+        width:33%;
+        object-fit: cover;
+        margin-top: 10%;
+    }
+    #text{
+        height: 200%;
+        
+    }
+
+}
