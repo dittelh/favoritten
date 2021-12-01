@@ -17,10 +17,20 @@ body{
     background-color: #649CCC;
     display: flex;
     justify-content: space-between;
-  }
+}
   
-.topnav #myLinks{
+
+.hideElement{
     display: none;
+}
+
+.showBurger{
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    background-color: #649CCC;
+    
 }
 
 .icon{
