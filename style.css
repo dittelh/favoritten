@@ -84,7 +84,8 @@ body{
 
 @media screen and (min-width: 992px){
     body{
-       
+        background-image: url("assets/images/himmelopa.png");
+        background-size: cover;
     }
 
     .icon{
