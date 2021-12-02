@@ -78,10 +78,13 @@ body{
     margin-top: 2.5%;
 }
 
+.hideMobile{
+    display: none;
+}
+
 @media screen and (min-width: 992px){
     body{
-        background-image: url("assets/images/himmelopa.png");
-
+       
     }
 
     .icon{
@@ -98,6 +101,7 @@ body{
         font-weight: bold;
         border-right: solid;        
     }
+    
     #myLinks > a:first-child{
         border-left: solid;        
     }
@@ -143,6 +147,9 @@ body{
         margin: 1rem;
     }
 
+    .hideMobile{
+        display: unset;
+    }
 
 
 }

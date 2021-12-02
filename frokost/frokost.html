@@ -35,118 +35,134 @@
         </a>
       </div>
     </header>
-    <h3 class="overskrift">Vælg hvilken kategori:</h3>
-    <div class="kategoricontainer">
-      <button
-        id="vegetarisk"
-        class="kategori"
-        value="28"
-        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
-        Vegetarisk
-      </button>
-      <button
-        id="fisk"
-        class="kategori"
-        value="30"
-        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
-        Fisk og grønt
-      </button>
-      <button
-        id="kaloriefattigt"
-        class="kategori"
-        value="28"
-        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
-        Kaloriefattigt
-      </button>
-      <button
-        id="boernevenligt"
-        class="kategori"
-        value="28"
-        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
-        Børnevenligt
-      </button>
-      <button
-        id="glutenfrit"
-        class="kategori"
-        value="28"
-        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
-        Glutenfrit
-      </button>
-      <button
-        id="proteinrigt"
-        class="kategori"
-        value="30"
-        onclick="categoryValue(event), highlightedFoodChoice(this.id)">
-        Proteinrigt
-      </button>
-    </div>
-    <h3 class="overskrift">Hvor mange personer?</h3>
-    <div class="personcontainer">
-      <button 
-      id="1" 
-      class="personer" 
-      value="1" 
-      onclick="personsValue(event), highlightedPersonChoice(this.id)">
-        1
-      </button>
-      <button 
-      id="2" 
-      class="personer" 
-      value="2" 
-      onclick="personsValue(event), highlightedPersonChoice(this.id)">
-        2
-      </button>
-      <button 
-      id="3" 
-      class="personer" 
-      value="3" 
-      onclick="personsValue(event), highlightedPersonChoice(this.id)">
-        3
-      </button>
-      <button 
-      id="4" 
-      class="personer" 
-      value="4" 
-      onclick="personsValue(event), highlightedPersonChoice(this.id)">
-        4
-      </button>
-    </div>
-    <h3 class="overskrift">Hvor mange måltider?</h3>
-    <div class="slidecontainer">
-      <input
-        type="range"
-        min="1"
-        max="5"
-        value="3"
-        class="slider"
-        id="slider"
-        oninput="mealsValue()"/>
-      <output id="output">3</output>
-    </div>
-    <div id="priscontainer">
-      <section id="overskriftId">
-        <h3 class="prisoverskrift">Prisoversigt</h3>
-        <p id="pId" class="prisoverskrift">4 måltider for 2 personer per uge</p>
-      </section>
-      <hr id="hrId" />
-      <div id="prisId">
-        <p>Pris</p>
-        <p id="price">240,-</p>
+    <main>
+      <div id="leftPhoto" class="hideMobile">
+        <img class="kategoriBilleder" src="../assets/images/vegetarisk.jpg" alt="Vegetarisk">
+        <img class="kategoriBilleder" src="../assets/images/kaloriefattigt.jpg" alt="Kaloriefattigt">
+        <img class="kategoriBilleder" src="../assets/images/glutenfri.jpg" alt="glutenfri">
       </div>
-      <div id="leveringId">
-        <p>Levering</p>
-        <p>20,-</p>
+      <div>
+        <h3 class="overskrift">Vælg hvilken kategori:</h3>
+        <div class="kategoricontainer">
+          <button
+            id="vegetarisk"
+            class="kategori"
+            value="28"
+            onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+            Vegetarisk
+          </button>
+          <button
+            id="fisk"
+            class="kategori"
+            value="30"
+            onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+            Fisk og grønt
+          </button>
+          <button
+            id="kaloriefattigt"
+            class="kategori"
+            value="28"
+            onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+            Kaloriefattigt
+          </button>
+          <button
+            id="boernevenligt"
+            class="kategori"
+            value="28"
+            onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+            Børnevenligt
+          </button>
+          <button
+            id="glutenfrit"
+            class="kategori"
+            value="28"
+            onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+            Glutenfrit
+          </button>
+          <button
+            id="proteinrigt"
+            class="kategori"
+            value="30"
+            onclick="categoryValue(event), highlightedFoodChoice(this.id)">
+            Proteinrigt
+          </button>
+        </div>
+        <h3 class="overskrift">Hvor mange personer?</h3>
+        <div class="personcontainer">
+          <button 
+          id="1" 
+          class="personer" 
+          value="1" 
+          onclick="personsValue(event), highlightedPersonChoice(this.id)">
+            1
+          </button>
+          <button 
+          id="2" 
+          class="personer" 
+          value="2" 
+          onclick="personsValue(event), highlightedPersonChoice(this.id)">
+            2
+          </button>
+          <button 
+          id="3" 
+          class="personer" 
+          value="3" 
+          onclick="personsValue(event), highlightedPersonChoice(this.id)">
+            3
+          </button>
+          <button 
+          id="4" 
+          class="personer" 
+          value="4" 
+          onclick="personsValue(event), highlightedPersonChoice(this.id)">
+            4
+          </button>
+        </div>
+        <h3 class="overskrift">Hvor mange måltider?</h3>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="5"
+            value="3"
+            class="slider"
+            id="slider"
+            oninput="mealsValue()"/>
+          <output id="output">3</output>
+        </div>
       </div>
-      <hr id="hrId2" />
-      <div id="totalId">
-        <p>Total</p>
-        <p id="totalPrice">260,-</p>
+      <div id="rightPhoto" class="hideMobile">
+        <img class="kategoriBilleder" src="../assets/images/fiskoggrønt.jpg" alt="fiskoggrønt">
+        <img class="kategoriBilleder" src="../assets/images/børnevenligt.jpg" alt="børnevenligt">
+        <img class="kategoriBilleder" src="../assets/images/proteinrig.jpg" alt="proteinrig">
       </div>
-    </div>
-    <div id="lægikurv">
-      <a id="tekstlægikurv" href="../indkøbskurv/indkøbskurv.html">
-        Læg i kurv </a>
-    </div>
+      <div id="rightContainer">
+        <div id="priscontainer">
+          <section id="overskriftId">
+            <h3 class="prisoverskrift">Prisoversigt</h3>
+            <p id="pId" class="prisoverskrift">4 måltider for 2 personer per uge</p>
+          </section>
+          <hr id="hrId" />
+          <div id="prisId">
+            <p>Pris</p>
+            <p id="price">240,-</p>
+          </div>
+          <div id="leveringId">
+            <p>Levering</p>
+            <p>20,-</p>
+          </div>
+          <hr id="hrId2" />
+          <div id="totalId">
+            <p>Total</p>
+            <p id="totalPrice">260,-</p>
+          </div>
+        </div>
+        <div id="lægikurv">
+          <a id="tekstlægikurv" href="../indkøbskurv/indkøbskurv.html">
+            Læg i kurv </a>
+        </div>
+      </div>
+    </main>
     <footer id="footer">
       <div id="someDiv">
         <img class="some" src="../assets/images/instagram.png" alt="" />
