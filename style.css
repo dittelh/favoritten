@@ -24,12 +24,13 @@ body{
 }
 
 .showBurger{
-    display: block;
-    position: absolute;
+    display: block !important;
+    position: absolute !important;
     top: 78px;
     left: 0px;
     background-color: #649CCC;
     width: 100%;
+    z-index: 1;
 }
 
 .icon{
