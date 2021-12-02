@@ -109,7 +109,7 @@ h4{
     border-width: .5px;
 }
 
-#totalId{
+.totalId{
     display: flex;
     justify-content: space-between;
     background-color: rgb(162, 173, 134);
@@ -120,7 +120,7 @@ p{
     font-weight: lighter;
 }
 
-#totalId, #totalPrice{
+.totalId, #totalPrice{
     font-weight: bolder;
 }
 
